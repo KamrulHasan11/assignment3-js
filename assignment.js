@@ -2,9 +2,7 @@
 function kilometerToMeter(km){
     var m = km * 1000;
     return m;
-}
-var result = kilometerToMeter(3);
-console.log(result); // End of kilometerToMeter function
+} // End of kilometerToMeter function
 
 
 // Start budgetCalculator function
@@ -21,9 +19,7 @@ function budgetCalculator(x, y, z){
         return "Oh! no, please input positive number."
     }
     return sum
-}
-let result = budgetCalculator(2, 6, 6)
-console.log(result); // End of budgerCalculator function
+} // End of budgerCalculator function
 
 
 // Start of hotelCost function
@@ -44,19 +40,16 @@ function hotelCost(singleDayHotelCost){
         everyDaysCost = first10Days + second10Days + after20Days;
     }
     return everyDaysCost;
-}
-var result = hotelCost(30);
-console.log(result); // End of hotelCost function
+} // End of hotelCost function
 
 
 // Start of megaFriend function
-function megaFriend(friendsName){
-    var max = [0];
-    for(i=0; i<friendsName.length; i++){
-        var element = friendsName[i];
+function megaFriend(friends){
+    var max = friends[0];
+    for(i=0; i < friends.length; i++){
+        var element = friends[i];
         if(element > max){
             max = element;
         }
-    }
-    return max;
+    }return max;
 } // End of megaFriend function
